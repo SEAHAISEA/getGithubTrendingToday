@@ -1,0 +1,35 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: getGithubTrendingToday
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+
+# 分钟 (0-59)
+# 小时 (0-23)
+# 天 (1-31)
+# 月 (1-12)
+# 星期 (0-6)
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run Scraper
+      run: |
+        python getGithubTrending.py
