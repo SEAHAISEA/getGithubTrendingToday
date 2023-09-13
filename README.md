@@ -31,6 +31,9 @@ getGithubTrendingToday-to-email
 
 5.复制getGithubTrending.yml中的内容
 
+![xxxxxxsda](https://github.com/SEAHAISEA/getGithubTrendingToday/assets/50478918/b2eb468c-9d89-426a-a7aa-a7a34434d196)
+
+
 ### 3.效果
 
 ![IMG_20230913_173400](https://github.com/SEAHAISEA/getGithubTrendingToday/assets/50478918/6a31750a-9f85-4c45-a683-f8d30619f1c8)
