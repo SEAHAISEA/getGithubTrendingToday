@@ -26,3 +26,17 @@ getGithubTrendingToday-to-email
  3.上传getGithubTrending.py，requirements.txt两个文件到仓库中<br>
 
  4.创建gitHub Actions
+
+![appp](https://github.com/SEAHAISEA/getGithubTrendingToday/assets/50478918/f6f3bbe9-2308-4546-9fb8-d21aab279f1b)
+
+5.复制getGithubTrending.yml中的内容
+
+### 3.效果
+
+![IMG_20230913_173400](https://github.com/SEAHAISEA/getGithubTrendingToday/assets/50478918/6a31750a-9f85-4c45-a683-f8d30619f1c8)
+
+# ----------------end
+
+thanks!
+
+![IMG_20230913_190002](https://github.com/SEAHAISEA/getGithubTrendingToday/assets/50478918/37294956-9bbe-423d-8275-f3e11264533b)
