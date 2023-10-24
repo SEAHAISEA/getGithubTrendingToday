@@ -3,6 +3,11 @@ getGithubTrendingToday-to-email
 
 使用gitHub Actions，每天获取github-Trending信息，发送到邮箱！
 
+2023-10-24新增项目说明支持中英文
+
+![fcf30948-3be8-408a-9b1e-252b91de1e72](https://github.com/SEAHAISEA/getGithubTrendingToday/assets/50478918/5c2445b7-e2de-4b06-a06d-8833658456e1)
+
+
 ### 1.准备两个邮箱
 
 （QQ邮箱示例）<br>
