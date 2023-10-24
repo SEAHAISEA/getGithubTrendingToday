@@ -8,14 +8,14 @@ from googletrans import Translator
 
 
 def sendEmail(article, dateVal):
-	# 邮件配置
-	smtp_server = 'smtp.qq.com'#邮箱服务端
-	smtp_port = 465#邮箱端口
-	sender_email = 'xxxx'#发送邮箱
-	sender_password = 'xxxx'#发送邮箱的授权码
-	receiver_email = 'xxxx'#接收邮箱
-	# 创建MIMEMultipart对象
-	msg = MIMEMultipart()
+    # 邮件配置
+    smtp_server = 'smtp.qq.com'  # 邮箱服务端
+    smtp_port = 465  # 邮箱端口
+    sender_email = 'xxxx'  # 发送邮箱
+    sender_password = 'xxxx'  # 发送邮箱的授权码
+    receiver_email = 'xxxx'  # 接收邮箱
+    # 创建MIMEMultipart对象
+    msg = MIMEMultipart()
 
     # 设置邮件内容
     msg['From'] = sender_email
@@ -24,12 +24,12 @@ def sendEmail(article, dateVal):
 
     # 创建HTML内容
     html_content = '''
-	<html>
-	<body>
-	{article}
-	</body>
-	</html>
-	'''.format(article=article)
+    <html>
+    <body>
+    {article}
+    </body>
+    </html>
+    '''.format(article=article)
 
     # 创建MIMEText对象
     html_part = MIMEText(html_content, 'html')
@@ -52,10 +52,10 @@ def sendEmail(article, dateVal):
 
 def getTrending():
     HEADERS = {
-        'User-Agent'		: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0',
-        'Accept'			: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Encoding'	: 'gzip,deflate,sdch',
-        'Accept-Language'	: 'zh-CN,zh;q=0.8',
+        'User-Agent'        : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0',
+        'Accept'            : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Encoding'   : 'gzip,deflate,sdch',
+        'Accept-Language'   : 'zh-CN,zh;q=0.8',
         'Connection': 'close'
     }
 
@@ -64,11 +64,11 @@ def getTrending():
     dateVal = datetime.datetime.now().strftime('%Y年%m月%d日')
 
     date_title = '''
-	<div>
-  	<h1 style="text-align: center;color: #167df5;margin-top: 30px">githubTrending</h1>
- 	<h3 style="text-align: center;color: #167df5;">{dateVal}</h3>
-	</div>
-	'''.format(dateVal=dateVal)
+    <div>
+    <h1 style="text-align: center;color: #167df5;margin-top: 30px">githubTrending</h1>
+    <h3 style="text-align: center;color: #167df5;">{dateVal}</h3>
+    </div>
+    '''.format(dateVal=dateVal)
 
     # 字符串拼接
     get_article = date_title
